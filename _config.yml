@@ -3,11 +3,11 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: Hexo
-subtitle:
-description:
-author: Yvan Mao
-language:
+title: 零一编界
+subtitle: 用零一编写世界
+description: 
+author: 零一编界
+language: zh-CN
 timezone:
 
 # URL
@@ -80,3 +80,23 @@ deploy:
   type: git
   repo: git@git.coding.net:yvanmao/blog.git
 #  repo: git@gitee.com:yvanfeng/blog.git
+
+
+jsonContent:
+    meta: false
+    pages: false
+    posts:
+      title: true
+      date: true
+      path: true
+      text: false
+      raw: false
+      content: false
+      slug: false
+      updated: false
+      comments: false
+      link: false
+      permalink: false
+      excerpt: false
+      categories: false
+      tags: true
