@@ -12,7 +12,7 @@ tags: android 文本样式
 [查看源码](https://github.com/YvanMao/TextStyle)
 ## 常用参数
 
-```
+```java
 Spanned.SPAN_EXCLUSIVE_EXCLUSIVE --- 不包含两端start和end所在的端点 (a,b)
 Spanned.SPAN_EXCLUSIVE_INCLUSIVE --- 不包含端start，但包含end所在的端点 (a,b]
 Spanned.SPAN_INCLUSIVE_EXCLUSIVE --- 包含两端start，但不包含end所在的端点 [a,b)
@@ -38,7 +38,7 @@ Spanned.SPAN_INCLUSIVE_INCLUSIVE--- 包含两端start和end所在的端点 [a,b]
 左中右，需要textview设置成 match_parent 才看得出效果  
 ![AlignmentSpan](text-style/alignmentSpan.png)
 
-```
+```java
         Standard asCenter = new Standard(Alignment.ALIGN_CENTER);
         Standard asNormal = new Standard(Alignment.ALIGN_NORMAL);
         Standard asOpposite = new Standard(Alignment.ALIGN_OPPOSITE);
@@ -57,7 +57,7 @@ Spanned.SPAN_INCLUSIVE_INCLUSIVE--- 包含两端start和end所在的端点 [a,b]
 ## BackgroundColorSpan / 背景样式
 ![BackgroundColorSpan](text-style/backgroundColorSpan.png)
 
-```
+```java
         String strBgBlue = "蓝色背景";
         String strBgGray = "灰色背景";
         String strBgYellow = "黄色背景";
@@ -77,7 +77,7 @@ Spanned.SPAN_INCLUSIVE_INCLUSIVE--- 包含两端start和end所在的端点 [a,b]
 会在文本前面加一个小圆点  
 ![BulletSpan](text-style/bulletSpan.png)
 
-```
+```java
         String p1 = "the first para.\n";
         String p2 = "the second para.\n";
         String p3 = "parcel para.";
@@ -99,7 +99,7 @@ Spanned.SPAN_INCLUSIVE_INCLUSIVE--- 包含两端start和end所在的端点 [a,b]
 ## DrawableMarginSpan / 图片+Margin样式
 ![DrawableMarginSpan](text-style/drawableMarginSpan.png)
 
-```
+```java
         String strStart = "no pad text\n";
         String strMiddle = "pad 30px text\n";
         String strEnd = "pad 10px text";
@@ -116,7 +116,7 @@ Spanned.SPAN_INCLUSIVE_INCLUSIVE--- 包含两端start和end所在的端点 [a,b]
 ## ForegroundColorSpan / 字体颜色样式
 ![ForegroundColorSpan](text-style/foregroundColorSpan.png)
 
-```
+```java
         String strDefault = "默认颜色：红色";
         String strGreen = "绿色字体";
         String strOrange = "黄色字体";
@@ -134,7 +134,7 @@ Spanned.SPAN_INCLUSIVE_INCLUSIVE--- 包含两端start和end所在的端点 [a,b]
 ## ImageSpan / 图片样式
 ![ImageSpan](text-style/imageSpan.png)
 
-```
+```java
         String text = "Android*一词的本义*指“机器人”*。Google*";
         Bitmap bm = ((BitmapDrawable) getDrawable(R.drawable.qq1)).getBitmap();
         Drawable d = getDrawable(R.drawable.qq108);
@@ -154,7 +154,7 @@ Spanned.SPAN_INCLUSIVE_INCLUSIVE--- 包含两端start和end所在的端点 [a,b]
 ## LeadingMarginSpan / 文本缩进的样式
 ![LeadingMarginSpan](text-style/leadingMarginSpan.png)
 
-```
+```java
         String s1 = "文本段落--讲述一个被人遗忘的故事......";
         String s2 = "河南的1942--悲惨的世界，无穷无尽的饥饿和死亡。";
         String s3 = "灾民的后裔，我就是当年灾民的后裔。";
@@ -174,7 +174,7 @@ EmbossMaskFilter ,在android4.0以上已经无效了,我android7.0上直接显�
 
 ![MaskFilter](text-style/maskFilter.png)
 
-```
+```java
         String s1 = "MaskFilterSpan";
         String s2 = "究竟应该如何使用？";
         int l1 = s1.length(), l2 = s2.length();
@@ -192,7 +192,7 @@ EmbossMaskFilter ,在android4.0以上已经无效了,我android7.0上直接显�
 
 ![QuoteSpan](text-style/quoteSpan.png)
 
-```
+```java
         String part1 = "第一部分\n";
         String part2 = "第二部分床前明月光，疑是地上霜。举头望明月，低头思故乡。";
         String part3 = "第三部分\n";
@@ -216,7 +216,7 @@ EmbossMaskFilter ,在android4.0以上已经无效了,我android7.0上直接显�
 ## RelativeSizeSpan / 相对大小样式
 ![RelativeSizeSpan](text-style/relativeSizeSpan.png)
 
-```
+```java
         String sentence1 = "风劲角弓鸣，将军猎渭城。(0.5f)\n";
         String sentence2 = "草枯鹰眼疾，雪尽马蹄轻。(1.0f)\n";
         String sentence3 = "忽过新丰市，还归细柳营。(1.5f)\n";
@@ -236,7 +236,7 @@ EmbossMaskFilter ,在android4.0以上已经无效了,我android7.0上直接显�
 ## ScaleXSpan / 横向缩放样式
 ![ScaleXSpan](text-style/scaleXSpan.png)
 
-```
+```java
         String sentence1 = "月黑雁飞高，(0.5f)\n";
         String sentence2 = "单于夜遁逃。(1.0f)\n";
         String sentence3 = "欲将轻骑逐，(2.5f)\n";
@@ -257,7 +257,7 @@ EmbossMaskFilter ,在android4.0以上已经无效了,我android7.0上直接显�
 ## StrikethroughSpan / 删除线样式
 ![StrikethroughSpan](text-style/strikethroughSpan.png)
 
-```
+```java
         String sentence = "StrikethroughSpan is a line at the vertical middle position in the text.";
         int l1 = sentence.length();
         StrikethroughSpan ss = new StrikethroughSpan();
@@ -270,7 +270,7 @@ EmbossMaskFilter ,在android4.0以上已经无效了,我android7.0上直接显�
 
 ![StyleSpan](text-style/styleSpan.png)
 
-```
+```java
         String sentence = "StyleSpan set the style of the text.";
         int l1 = sentence.length();
         StyleSpan ssBold = new StyleSpan(Typeface.BOLD);
@@ -290,7 +290,7 @@ EmbossMaskFilter ,在android4.0以上已经无效了,我android7.0上直接显�
 
 ![SubscriptSpan](text-style/subscriptSpan.png)
 
-```
+```java
         String text = "Cu2(OH)2CO3-碱式碳酸铜";
         Spannable spn = SpannableStringBuilder.valueOf(text);
         spn.setSpan(new SubscriptSpan(), 2, 3, Spannable.SPAN_EXCLUSIVE_EXCLUSIVE);
@@ -303,7 +303,7 @@ EmbossMaskFilter ,在android4.0以上已经无效了,我android7.0上直接显�
 
 ![SuperscriptSpan](text-style/superscriptSpan.png)
 
-```
+```java
         String text = "a2+b2=c2";
         Spannable spn = SpannableStringBuilder.valueOf(text);
         spn.setSpan(new SuperscriptSpan(), 1, 2, Spannable.SPAN_EXCLUSIVE_EXCLUSIVE);
@@ -316,7 +316,7 @@ EmbossMaskFilter ,在android4.0以上已经无效了,我android7.0上直接显�
 
 ![TabStopSpan](text-style/tabStopSpan.png)
 
-```
+```java
         String para1 = "\t(本段偏移50)北冥有鱼，\t其名为鲲。鲲之大，不知其几千里也。化而为鸟，其名为鹏。\r\n";
         String para2 = "\t(本段未偏移)鹏之背，不知\t其几千里也；怒而飞，其翼若垂天之云。是鸟也，海运则将徙于南冥。" + "南冥者，天池也。 ";
         TabStopSpan.Standard tss = new TabStopSpan.Standard(50);
@@ -329,7 +329,7 @@ EmbossMaskFilter ,在android4.0以上已经无效了,我android7.0上直接显�
 
 通过xml配置来处理文本样式
 
-```
+```java
         String para1 = "青海长云暗雪山，\n";
         String para2 = "孤城遥望玉门关。\n";
         String para3 = "黄沙百战穿金甲，\n";
@@ -369,7 +369,7 @@ EmbossMaskFilter ,在android4.0以上已经无效了,我android7.0上直接显�
 
 ![TypefaceSpan](text-style/typefaceSpan.png)
 
-```
+```java
         String text1 = "The font is a strange thing.\n";
         String text2 = "The font is a strange thing.\n";
         String text3 = "The font is a strange thing.\n";
@@ -394,7 +394,7 @@ EmbossMaskFilter ,在android4.0以上已经无效了,我android7.0上直接显�
 ## UnderlineSpan / 下划线样式
 ![UnderlineSpan](text-style/underlineSpan.png)
 
-```
+```java
         String sentence1 = "安能摧眉折腰事权贵，";
         String sentence2 = "使我不得开心颜。";
         int l1 = sentence1.length(), l2 = sentence2.length();
@@ -408,7 +408,7 @@ EmbossMaskFilter ,在android4.0以上已经无效了,我android7.0上直接显�
 
 ![URLSpan](text-style/urlSpan.png)
 
-```
+```java
         String text = "点击这里看到哪儿去...再点击这里看看呢？";
         URLSpan us = new URLSpan("http://www.baidu.com");
         Parcel p = Parcel.obtain();
@@ -426,7 +426,7 @@ Html.fromHtml 返回的也是一个 Spaned 样式对象，主要用来把html标
 
 ![Html.fromHtml](text-style/htmlSpan.png)
 
-```
+```java
         String textStr = "本月已成功邀请 <strong><font color='#FF0000'>" + 100 + "</font></strong>人";
         String imgStr = "</br><IMG src='qq1.png'></br></br><IMG src='qq1gif.gif'>";
         Spanned spn = Html.fromHtml(textStr + imgStr, new Html.ImageGetter() {
